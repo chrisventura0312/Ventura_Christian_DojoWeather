@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dojo Weather</title>
+        <link rel="stylesheet" href="dojoweather.css">
+        <meta name="viewport" content="width=device-width"> 
+    </head>
+    <body>
+    <div id="wrapper">
+        <!-- Navigation Bar -->
+        <div id="navBar">
+            <div id="navBarLeft">
+                <h1>DojoWeather</h1>
+            </div>
+            <div id="navBarRight">
+                <a href="#" onclick="cityAlert(this)"><span id = "city1">Burbank</span></a>
+                <a href="#" onclick = "cityAlert(this)"><span id = "city2">Chicago</span></a>
+                <a href="#" onclick = "cityAlert(this)"><span id = "city3">Dallas</span></a>
+            </div>
+        </div>
+    <!-- Content Section -->
+    <div id="content">
+        <!-- Header Section -->
+        <div id="header">
+            <div id="headLeft">
+            <h2>San Jose</h2>
+            </div>
+            <div id="headRight">
+            <label>show temperature in:</label>
+            <select id="tempSelect" name="tempSelect" onchange="convertTemp(this)">
+                <option value="Fahrenheit">°C</option>
+                <option value="Celsius">°F</option>
+            </select>
+            </div>
+        </div>
+        <hr>
+        <!-- Weather Section -->
+        <div id="weatherSection">
+            <div class="weather">
+                <h1>Today</h1>
+                <img src="some_rain.png" alt="rain">
+                <h3>some rain</h3>
+                <div class="highLow">
+                    <h4><span id = "temp1" style="color:red"> 24°</span></h4>
+                    <h4><span id = "temp2" style = "color:blue">18°</span></h4>
+                </div>
+            </div>
+            <div class="weather">
+                <h1>Tomorrow</h1>
+                <img src="some_sun.png" alt="rain">
+                <h3>some sun</h3>
+                <div class="highLow">
+                    <h4><span id = "temp3" style="color:red"> 27°</span></h4>
+                    <h4><span id = "temp4" style = "color:blue">19°</span></h4>
+                </div>
+            </div>
+            <div class="weather">
+                <h1>Friday</h1>
+                <img src="some_clouds.png" alt="rain">
+                <h3>some clouds</h3>
+                <div class="highLow">
+                    <h4><span id = "temp5" style="color:red"> 21°</span></h4>
+                    <h4><span id = "temp6" style = "color:blue">19°</span></h4>
+                </div>
+            </div>
+            <div class="weather">
+                <h1>Saturday</h1>
+                <img src="some_sun.png" alt="rain">
+                <h3>some sun</h3>
+                <div class="highLow">
+                    <h4><span id = "temp7" style="color:red"> 26°</span></h4>
+                    <h4><span id = "temp8" style = "color:blue">21°</span></h4>
+                </div>
+            </div>
+        </div>
+        <!-- Cookie Section -->
+        <div id="cookie">
+            <img src="cookie.png" alt="cookie">
+            <div id="cookieText">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content
+                and ads, to provide social media features and to analyze our traffic.
+                <a href="#">Read more...</a>
+            </p>
+            </div>
+            <button onclick="cookieAccept('#cookie')">I Accept</button>
+        </div>
+    </div>
+    </div>
+    <script src="dojoweather.js"></script>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    padding: 0%;
+}
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: rgb(100, 148, 253);
+    color: white;
+    margin-bottom: 30px;
+}
+#navBarLeft{
+    font-size: 25pt;
+    width: 30%;
+}
+#navBarRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+#navBarRight a{
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: 600;
+}
+#navBarRight a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+    width: 100%;
+}
+#header{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+#headLeft{
+    font-size: 20pt;
+    margin-right: 67%;
+}
+#headRight{
+    font-size: 15pt;
+}
+#tempSelect{
+    font-size: 16pt;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+hr{
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+#weatherSection{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.weather {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+    background-color: rgb(219, 219, 219);
+    padding: 30px;
+}
+.weather img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.weather h1{
+    font-size: 30pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.weather h3{
+    font-size: 18pt;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.highLow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20pt;
+}
+#cookie{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    background-color: rgb(201, 197, 197);
+    outline: black solid 2px;
+    color: black;
+    font-size: 15pt;
+    position: fixed;
+    bottom: 5%;
+    width: 70%;
+}
+#cookie img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+#cookie h2{
+    font-size: 25pt;
+}
+#cookie p{
+    font-size: 18pt;
+    padding-right: 10px;
+}
+#cookie button{
+    font-size: 18pt;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px black;
+    padding: 5px;
+    background-color: rgb(45, 168, 209);
+    margin-left: 20px;
+    width: 200px;
+}
